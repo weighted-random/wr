@@ -2,7 +2,7 @@ from itertools import islice
 from random import randint
 
 def wrr(data):
-    """ Returns a key of a passed in dict based on wrr.
+    """ Returns a key of the passed in dict.
         model: (key, weight)
         example: get_wrr({'cat': 80, 'dog': 20})
     """
@@ -18,3 +18,7 @@ def wrr(data):
     populationsize = sum(data.values())
     index = randint(0, populationsize - 1)
     return islice(population, index, None).next()
+
+# Alias
+get = wrr
+
