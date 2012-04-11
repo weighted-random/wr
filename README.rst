@@ -1,9 +1,10 @@
 wrr (Weighted Round Robin)
 ==========================
 
-wrr is a weighted round robin implementation in Python.
-wrr.get returns a key of a passed in dict.
-model: (key, weight)
+*wrr is a weighted round robin implementation in Python.*
+
+``wrr.get`` returns a key of a passed in dict containing keys (anything that is hashable) and weights as their respective values.
+``{key: weight}``
 
 Wikipedia: http://en.wikipedia.org/wiki/Weighted_round_robin
 
