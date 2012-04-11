@@ -12,8 +12,8 @@ setup(
     license='LGPL',
     author='Waawal',
     author_email='waawal@boom.ws',
-    description='wr is a simple, lightweight module for working with '
-                'weighted round robin in Python.',
+    description='wr is a simple, lightweight module that provides '
+                'random choice based on weight',
     long_description=long_description,
     py_modules=['wr'],
     zip_safe=True,
