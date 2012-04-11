@@ -1,11 +1,15 @@
+import sys
+try:
+    from collections import Counter
+except ImportError:
+    from counter import Counter
 from wrr import wrr
 
 def test_wrr(data, times=10000):
-    import collections
     testcase = []
-    for x in xrange(times):
+    for x in range(times):
         testcase.append(wrr(data))
-    counter=collections.Counter(testcase)
+    counter = Counter(testcase)
     print counter.most_common(4)
 
 test_wrr({3: 50, 34: 50})
