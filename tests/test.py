@@ -1,8 +1,11 @@
+import sys
 import unittest
 try:
     from collections import Counter
 except ImportError:
     from counter import Counter
+
+sys.path.append('../') # Yeah... well... The price you have to pay.
 import wr
 
 
@@ -24,5 +27,5 @@ class WRRTestCase(unittest.TestCase):
         self.assertTrue(result['bird'] < result['dog'])
         self.assertTrue(result['bird'] < result['cat'])
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
