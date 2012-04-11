@@ -31,7 +31,7 @@ setup(
         'Intended Audience :: Information Technology',
         'Intended Audience :: Science/Research',
         'Intended Audience :: System Administrators',
-        'License :: OSI Approved :: LGPL License',
+        'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',
