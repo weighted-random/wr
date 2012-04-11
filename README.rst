@@ -3,7 +3,7 @@ wr (Weighted Random)
 
 *wr is a weighted random implementation in Python.*
 
-``wrr.get`` returns a key of a passed in dict based on the weights of the keys as their respective values.
+``wr.get`` returns a key of a passed in dict based on the weights of the keys as their respective values.
 ``{key: weight}`` The key can be anything hashable including callables but the weight must be a integer.
 
 
@@ -21,7 +21,7 @@ Example
 Installation and Dependencies
 -----------------------------
 
-Install wr with ``pip install wr`` or just `download wr.py <http://pypi.python.org/pypi/wrr>`_ and place it in your project directory.
+Install wr with ``pip install wr`` or just `download wr.py <http://pypi.python.org/pypi/wr>`_ and place it in your project directory.
 
 License
 -------
