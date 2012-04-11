@@ -19,7 +19,10 @@ def wr(data):
             for _ in range(weight):
                 yield item
     population = build_population(data)
-    populationsize = sum(data.values())
+    if isinstance(data, Mapping):
+        populationsize = sum(data.values())
+    else:
+        populationsize = sum([i[1] for i in data])
     index = randint(0, populationsize - 1)
     return islice(population, index, None).next()
 
