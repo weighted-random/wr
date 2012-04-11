@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>wr by waawal</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>wr</h1>
+        <p>Python Module Implementing Weighted Random</p>
+        <p class="view"><a href="https://github.com/waawal/wr">View the Project on GitHub <small>waawal/wr</small></a></p>
+        <ul>
+          <li><a href="https://github.com/waawal/wr/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/waawal/wr/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/waawal/wr">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>wr (Weighted Random)</h1>
+
+<p>wr is a weighted random implementation in Python.</p>
+
+<hr><p><code>wr.get</code> can be fed both mappings (such as dictionaries) and sequences of pairs containing what to return and a integer representing their respective weight. It returns a the key of in case of mappings based on the weights defined in the key's corresponding value. The key can be anything hashable but the weight must be a integer.</p>
+
+<p>Optionally you may feed <code>wr.get</code> with a sequence of pairs.</p>
+
+<h2>Structures</h2>
+
+<div class="highlight">
+<pre><span class="p">{</span><span class="s">'cat'</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s">'bird'</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="c"># Or as a sequence:</span>
+<span class="p">[((</span><span class="s">'cat'</span><span class="p">),</span> <span class="p">(</span><span class="mi">60</span><span class="p">)),</span> <span class="p">((</span><span class="s">'dog'</span><span class="p">),</span> <span class="p">(</span><span class="mi">30</span><span class="p">)),</span> <span class="p">((</span><span class="s">'bird'</span><span class="p">),</span> <span class="p">(</span><span class="mi">10</span><span class="p">))]</span>
+</pre>
+</div>
+
+
+<h2>Example</h2>
+
+<div class="highlight">
+<pre><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">wr</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s">'cat'</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span> <span class="s">'dog'</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s">'bird'</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">animal</span> <span class="o">=</span> <span class="n">wr</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">animal</span>
+<span class="n">cat</span>
+<span class="c"># Well, the cat had a good 60% shot at it.</span>
+</pre>
+</div>
+
+
+<h2>Installation</h2>
+
+<p>Install wr with <code>pip install wr</code> or just <a href="http://pypi.python.org/pypi/wr">download wr.py</a> and place it in your project directory.</p>
+
+<h2>License</h2>
+
+<p><a href="http://www.gnu.org/copyleft/lesser.html">GNU Lesser General Public License</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/waawal">waawal</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
