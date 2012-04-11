@@ -21,4 +21,3 @@ def wrr(data):
 
 # Alias
 get = wrr
-
