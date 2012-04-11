@@ -3,9 +3,9 @@ from random import randint
 from collections import Mapping
 
 def wr(data):
-    """ Returns a key of the passed in dict.
-        model: (key, weight)
-        example: get_wrr({'cat': 80, 'dog': 20})
+    """ Returns a key of a passed in mapping containing weights
+        in it's corresponding values. It can also work on a
+        sequence of pairs consisting of (item, weight).
     """
 
     def build_population(data):
@@ -18,6 +18,7 @@ def wr(data):
         for item, weight in dataitems:
             for _ in range(weight):
                 yield item
+
     population = build_population(data)
     if isinstance(data, Mapping):
         populationsize = sum(data.values())
