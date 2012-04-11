@@ -13,6 +13,7 @@ Install wrr with ``pip install wrr`` or just `download wrr.py <http://pypi.pytho
 Example
 -------
 ::
+
     import wrr
     
     data = {'cat': 60, 'dog': 30, 'bird': 10}
