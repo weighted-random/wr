@@ -7,7 +7,7 @@ with open('README.rst') as file:
 
 setup(
     name='wr',
-    version='0.1.1',
+    version='0.1.2',
     url='https://github.com/waawal/wr/',
     license='LGPL',
     author='Waawal',
