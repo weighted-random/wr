@@ -11,7 +11,7 @@ def wrr(data):
         """ Builds a sample population of the data.
         """
         for item, weight in data.items():
-            for x in range(weight):
+            for _ in range(weight):
                 yield item
 
     population = build_population(data)
