@@ -3,7 +3,7 @@ try:
     from collections import Counter
 except ImportError:
     from counter import Counter
-import wrr
+import wr
 
 
 class WRRTestCase(unittest.TestCase):
@@ -13,7 +13,7 @@ class WRRTestCase(unittest.TestCase):
         data = {'cat': 60, 'dog': 30, 'bird': 10}
         testcase = []
         for _ in range(times):
-            testcase.append(wrr.get(data))
+            testcase.append(wr.get(data))
         counter = Counter(testcase)
         result =  dict(counter.most_common(3))
         

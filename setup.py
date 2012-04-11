@@ -6,16 +6,16 @@ with open('README.rst') as file:
     long_description = file.read()
 
 setup(
-    name='wrr',
+    name='wr',
     version='0.1.0',
-    url='https://github.com/waawal/wrr/',
+    url='https://github.com/waawal/wr/',
     license='LGPL',
     author='Waawal',
     author_email='waawal@boom.ws',
-    description='wrr is a simple, lightweight module for working with '
+    description='wr is a simple, lightweight module for working with '
                 'weighted round robin in Python.',
     long_description=long_description,
-    py_modules=['wrr'],
+    py_modules=['wr'],
     zip_safe=True,
     platforms='any',
     classifiers=[

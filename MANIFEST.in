@@ -1,1 +1,1 @@
-include wrr.py setup.py README.rst
+include wr.py setup.py README.rst
