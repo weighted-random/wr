@@ -2,6 +2,8 @@ wrr (Weighted Round Robin)
 ==========================
 
 wrr is a weighted round robin implementation in Python.
+wrr.get returns a key of a passed in dict.
+model: (key, weight)
 
 Wikipedia: http://en.wikipedia.org/wiki/Weighted_round_robin
 
@@ -14,7 +16,9 @@ Example
 -------
 ::
 
-    import wrr
+    >>> import wrr
     
-    data = {'cat': 60, 'dog': 30, 'bird': 10}
-    animal = wrr.get(data)
+    >>> data = {'cat': 60, 'dog': 30, 'bird': 10}
+    >>> animal = wrr.get(data)
+    >>> print animal
+    cat # well, the cat had a 60% shot at it.
