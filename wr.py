@@ -2,7 +2,7 @@ from itertools import islice
 from random import randint
 from collections import Mapping
 
-def wr(data):
+def choice(data):
     """ Returns a key of a passed in mapping containing weights
         in it's corresponding values. It can also work on a
         sequence of pairs consisting of (item, weight).
@@ -27,5 +27,4 @@ def wr(data):
     index = randint(0, populationsize - 1)
     return islice(population, index, None).next()
 
-# Alias
-get = wr
+

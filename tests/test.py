@@ -16,7 +16,7 @@ class WRRTestCase(unittest.TestCase):
         data = {'cat': 60, 'dog': 30, 'bird': 10}
         testcase = []
         for _ in range(times):
-            testcase.append(wr.get(data))
+            testcase.append(wr.choice(data))
         counter = Counter(testcase)
         result =  dict(counter.most_common(3))
         
@@ -32,7 +32,7 @@ class WRRTestCase(unittest.TestCase):
         data = [(('cat'), (60)), (('dog'), (30)), (('bird'), (10))]
         testcase = []
         for _ in range(times):
-            testcase.append(wr.get(data))
+            testcase.append(wr.choice(data))
         counter = Counter(testcase)
         result =  dict(counter.most_common(3))
 
