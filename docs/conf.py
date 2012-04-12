@@ -14,7 +14,10 @@
 import sys, os
 
 # For importing the docstrings:
-sys.path.append('../')
+#sys.path.append('../')
+root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, root_path)
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
