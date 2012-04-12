@@ -15,13 +15,11 @@ The key can be anything hashable but the weight must be a integer.
 
 Optionally you may feed ``wr.choice`` with a sequence of pairs.
 
-Structures
+Functions
 ----------
-::
 
-    {something_to_return: weight, something_else_to_return: weight}
-    # Or as a sequence:
-    [[(something_to_return), (weight)], [(something_else_to_return), (weight)]]
+.. automodule:: wr  
+    :members:
 
 Example
 -------
@@ -34,27 +32,20 @@ Example
     >>> print animal
     cat # well, the cat had a good 60% shot at it.
 
+Structures
+----------
+::
+
+    {something_to_return: weight, something_else_to_return: weight}
+    # Or as a sequence:
+    [(something_to_return, weight), (something_else_to_return, weight)]
+
 Installation
------------------------------
+------------
 
 Install wr with ``pip install wr`` or just `download wr.py <http://pypi.python.org/pypi/wr>`_ and place it in your project directory.
 
 License
 -------
 `GNU Lesser General Public License <http://www.gnu.org/copyleft/lesser.html>`_
-
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-.. automodule:: wr
-    :members:
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
