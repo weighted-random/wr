@@ -48,7 +48,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-.. automodule:: wrr
+.. automodule:: wr
     :members:
 
 Indices and tables
