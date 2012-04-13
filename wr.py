@@ -1,7 +1,32 @@
+"""
+.. module:: wr
+   :platform: Any
+   :synopsis: A Python module for working with weighted randomness.
+
+.. moduleauthor:: Waawal <waawal@boom.ws>
+
+
+"""
 import random
 from collections import Mapping
 
 def choice(data):
+    """The main implementation of weighted random choice.
+       (based on inplace algorithm)
+
+    Args:
+       data (Mapping or sequence of pairs):  (returnable, weight)
+
+    Returns:
+       For Mappings: A key
+       For sequences of pairs: [0] of a pair.
+
+    Usecase:
+
+    >>> print wr.choice({"hello": 80, "world": 20})
+    hello
+
+    """
     if isinstance(data, Mapping):
         dataitems = data.items()
         totalweights = sum(data.values()) - 1
