@@ -7,7 +7,7 @@ with open('README.rst') as file:
 
 setup(
     name='wr',
-    version='0.1.3',
+    version='0.1.4',
     url='http://waawal.github.com/wr/',
     license='LGPL',
     author='Waawal',
@@ -27,6 +27,13 @@ setup(
         #'Development Status :: 5 - Production/Stable',
         #'Development Status :: 6 - Mature',
         #'Development Status :: 7 - Inactive',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.0',
+        'Programming Language :: Python :: 3.1',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
         'Intended Audience :: Developers',
         'Intended Audience :: Information Technology',
         'Intended Audience :: Science/Research',
