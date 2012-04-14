@@ -8,7 +8,10 @@
 
 """
 import random
-from collections import Mapping
+try:
+    from collections import Mapping
+except ImportError:
+    Mapping = dict
 
 def choice(data):
     """The main implementation of weighted random choice.
