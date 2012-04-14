@@ -56,8 +56,11 @@
 # - use operator.itemgetter in place of _itemgetter
 # - only class Counter is provided
 
-from collections import Mapping
 from operator import itemgetter as _itemgetter
+try:
+    from collections import Mapping
+except:
+    Mapping = dict
 
 ########################################################################
 ###  Counter
