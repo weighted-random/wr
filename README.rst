@@ -1,3 +1,6 @@
+.. image:: http://farm5.staticflickr.com/4022/4297831216_ea3ef99461_t.jpg
+    :alt: http://www.flickr.com/photos/vj-dipsy/4297831216/
+    :align: right
 wr (Weighted Random)
 ==========================
 
@@ -10,7 +13,7 @@ Optionally you may feed ``wr.choice`` with a sequence of pairs.
 
 Example
 -------
-::
+.. code:: python
 
     >>> import wr
     
