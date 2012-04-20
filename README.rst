@@ -3,8 +3,7 @@ wr (Weighted Random)
 
 *wr is a weighted random implementation in Python.*
 
-``wr.choice`` can be fed both mappings (such as dictionaries) and sequences of pairs containing what to return and a integer representing their respective weight. It returns a the key of in case of mappings based on the weights defined in the key's corresponding value.
-
+``wr.choice`` can be fed both with a mapping (such as dictionaries) containing a returnable (what to return) and a integer representing their respective weight.  
 The key can be anything hashable but the weight must be a integer.
 
 Optionally you may feed ``wr.choice`` with a sequence of pairs.

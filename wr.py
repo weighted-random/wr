@@ -3,7 +3,7 @@
    :platform: Any
    :synopsis: A Python module for working with weighted randomness.
 
-.. moduleauthor:: Waawal <waawal@boom.ws>
+.. moduleauthor:: Daniel Waardal <waawal@boom.ws>
 
 
 """
@@ -21,8 +21,8 @@ def choice(data):
        data (Mapping or sequence of pairs):  (returnable, weight)
 
     Returns:
-       For Mappings: A key
-       For sequences of pairs: [0] of a pair.
+      For Mappings: A key of the passed in mapping.
+      For sequences of pairs: [0] (the first position) of a pair.
 
     Usecase:
 
