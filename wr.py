@@ -21,8 +21,8 @@ def choice(data):
        data (Mapping or sequence of pairs):  (returnable, weight)
 
     Returns:
-      For Mappings: A key of the passed in mapping.
-      For sequences of pairs: [0] (the first position) of a pair.
+      For a mapping: A key of the passed in mapping.
+      For a sequence of pairs: [0] (the first position) of a pair.
 
     Usecase:
 
