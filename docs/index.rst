@@ -46,5 +46,5 @@ Install wr with ``pip install wr`` or just `download wr.py <http://pypi.python.o
 
 License
 -------
-`GNU Lesser General Public License <http://www.gnu.org/copyleft/lesser.html>`_
+`BSD <http://www.linfo.org/bsdlicense.html>`_
 
