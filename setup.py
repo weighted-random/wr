@@ -7,13 +7,13 @@ with open('README.rst') as file:
 
 setup(
     name='wr',
-    version='0.1.5',
+    version='0.1.6',
     url='http://waawal.github.com/wr/',
-    license='LGPL',
-    author='Waawal',
+    license='BSD',
+    author='Daniel Waardal',
     author_email='waawal@boom.ws',
     description='wr is a simple, lightweight module that provides '
-                'random choice based on weight',
+                'random choice based on weight.',
     long_description=long_description,
     py_modules=['wr'],
     zip_safe=True,
@@ -22,8 +22,8 @@ setup(
         # As from http://pypi.python.org/pypi?%3Aaction=list_classifiers
         #'Development Status :: 1 - Planning',
         #'Development Status :: 2 - Pre-Alpha',
-        'Development Status :: 3 - Alpha',
-        #'Development Status :: 4 - Beta',
+        #'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         #'Development Status :: 5 - Production/Stable',
         #'Development Status :: 6 - Mature',
         #'Development Status :: 7 - Inactive',
@@ -40,7 +40,7 @@ setup(
         'Intended Audience :: Information Technology',
         'Intended Audience :: Science/Research',
         'Intended Audience :: System Administrators',
-        'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
+        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',

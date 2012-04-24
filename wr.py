@@ -18,7 +18,7 @@ def choice(data):
        (based on inplace algorithm)
 
     Args:
-       data (Mapping or sequence of pairs):  (returnable, weight)
+       data (Mapping or sequence of pairs) in the form of:  (returnable, weight)
 
     Returns:
       For a mapping: A key of the passed in mapping.
