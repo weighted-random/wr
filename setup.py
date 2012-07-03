@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-from setuptools import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
 
 with open('README.rst') as file:
@@ -7,13 +10,13 @@ with open('README.rst') as file:
 
 setup(
     name='wr',
-    version='0.2.0',
-    url='http://waawal.github.com/wr/',
+    version='0.2.1',
+    url='http://weighted-random.github.com/wr/',
     license='BSD',
     author='Daniel Waardal',
     author_email='waawal@boom.ws',
     description='wr is a simple, lightweight module that provides '
-                'random choice based on weight.',
+                'random choice based on weights.',
     long_description=long_description,
     py_modules=['wr'],
     zip_safe=True,
@@ -23,8 +26,8 @@ setup(
         #'Development Status :: 1 - Planning',
         #'Development Status :: 2 - Pre-Alpha',
         #'Development Status :: 3 - Alpha',
-        'Development Status :: 4 - Beta',
-        #'Development Status :: 5 - Production/Stable',
+        #'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         #'Development Status :: 6 - Mature',
         #'Development Status :: 7 - Inactive',
         'Programming Language :: Python :: 2',
