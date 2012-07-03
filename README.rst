@@ -13,6 +13,11 @@ The key can be anything hashable but the weight must be a integer.
 
 Optionally you may feed ``wr.choice`` with a sequence of pairs.
 
+Documentation
+-------------
+
+Documentation is available at http://wr.readthedocs.org/
+
 Example
 -------
 ::
